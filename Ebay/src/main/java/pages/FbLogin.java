@@ -23,7 +23,7 @@ public class FbLogin
        driver.findElement(By.name("pass")).sendKeys(pwd);
        driver.findElement(By.name("login")).click();
        System.out.println("hello");
-	   
+	   System.out.println("welcome");
    }
    public void validateErrormsg()
    {
