@@ -22,6 +22,7 @@ public class FbLogin
 	   driver.findElement(By.name("email")).sendKeys(uid);
        driver.findElement(By.name("pass")).sendKeys(pwd);
        driver.findElement(By.name("login")).click();
+       System.out.println("hello");
 	   
    }
    public void validateErrormsg()
