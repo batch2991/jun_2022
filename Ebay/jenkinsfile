@@ -3,7 +3,7 @@ pipeline
    agent any
    environment
    {
-      sf=credentials('sfile')
+      uname=credentials('username')
    }
    stages
    {
@@ -12,7 +12,7 @@ pipeline
         steps
         {
            echo "build the code"
-           echo $username
+           echo $uname
         }
       }
        stage("test")
