@@ -3,7 +3,7 @@ pipeline
    agent any
    environment
    {
-      uname=credentials('username')
+      uname=credentials('sfile')
    }
    stages
    {
