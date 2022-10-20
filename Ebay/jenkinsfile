@@ -1,6 +1,10 @@
 pipeline
 {
    agent any
+   environment
+   {
+      sf=credentials('sfile')
+   }
    stages
    {
       stage("build")
@@ -8,6 +12,7 @@ pipeline
         steps
         {
            echo "build the code"
+           echo $username
         }
       }
        stage("test")
